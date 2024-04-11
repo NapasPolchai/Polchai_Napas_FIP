@@ -1,0 +1,313 @@
+:root {
+    --main-orange: #F05D5E;
+    --light-blue: #E7ECEF;
+    --bg-black: #272933;
+    --white: #ffffff;
+}
+
+h1 {
+    font: italic normal var(--unnamed-font-weight-600) var(--unnamed-font-size-128)/128px var(--unnamed-font-family-poppins);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--light-bg);
+    text-align: center;
+    font: italic normal 400 128px/128px Poppins;
+    letter-spacing: 0px;
+    color: var(--light-blue);
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: left;
+    font: normal normal 600 48px/62px IBM Plex Mono;
+    letter-spacing: 0px;
+    color: var(--main-orange);
+    margin-top: 72px;
+}
+
+h3 {
+    text-align: left;
+    font: normal normal 600 32px/42px IBM Plex Mono;
+    letter-spacing: 0px;
+    margin-bottom: 24px;
+    color: var(--main-orange);
+}
+
+h4 {
+    text-align: center;
+    font: normal normal 400 24px/32px IBM Plex Mono;
+    letter-spacing: 0px;
+    color: var(--light-blue);
+}
+
+h5 {
+    text-align: center;
+    font: normal normal 400 16px/20px IBM Plex Mono;
+    letter-spacing: 4.8px;
+    color: var(--light-blue);
+    text-transform: uppercase;
+}
+
+p {
+    text-align: left;
+    font: normal normal 400 16px/20px IBM Plex Mono;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: var(--light-blue);
+}
+
+#contact-head {
+    text-align: center;
+    font: normal normal 600 48px/62px IBM Plex Mono;
+    letter-spacing: 0px;
+    color: var(--light-blue);
+    margin-top: 72px;
+    margin-bottom: 24px;
+}
+
+#main-nav {
+    margin-top: 54px;
+    margin-bottom: 24px;
+}
+
+#logo {
+    margin-top: 48px;
+    margin-bottom: 24px;
+}
+
+.menu {
+    color: var(--light-bg);
+    text-align: center;
+    font: normal normal normal 16px/20px IBM Plex Mono;
+    letter-spacing: 0px;
+    color: var(--light-blue);
+    text-transform: none;
+    margin-left: 16px;
+}
+
+#main-header {
+    display: flex;
+    background-color: var(--main-orange);
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: var(--bg-black);
+}
+
+#hero {
+    background-color: var(--main-orange);
+    height: 100vh;
+    width: 100vw;
+}
+
+#hero-text {
+    position: relative;
+    margin-top: 24px;
+    justify-content: center;
+    width: 100vw;
+}
+
+#hero-img {
+    position: absolute;
+    margin-top: -192px;
+    justify-content: center;
+    width: 100vw;
+}
+
+#card-lemon {
+    border-radius: 16px;
+    background-color: var(--light-blue);
+    opacity: 1.0;
+}
+
+#card-strawberry {
+    border-radius: 16px;
+    background-color: #F3D7DA;
+    opacity: 1.0;
+}
+
+#card-grape {
+    border-radius: 16px;
+    background-color: #A1A3E8;
+    opacity: 1.0;
+}
+
+.card-img {
+    margin-bottom: 72px;
+}
+
+#contact-form-landing {
+    border-radius: 16px;
+    background-color: #ffffff;
+    padding: 48px 24px;
+    margin-bottom: 72px;
+}
+
+#contact {
+    background-color: var(--main-orange);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    outline: none;
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+input[type="phone"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    outline: none;
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    outline: none;
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+input[type="message"] {
+    width: 100%;
+    height: 128px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #707070;
+    outline: none;
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+label {
+    text-align: center;
+    font: normal normal 400 16px/20px IBM Plex Mono;
+    letter-spacing: 4.8px;
+    color: var(--main-orange);
+    text-transform: uppercase;
+}
+
+button[type="submit"] {
+    background-color: var(--main-orange);
+    color: #fff;
+    border: 1px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    /* Remove the default focus outline */
+}
+
+/* Hover style for the button */
+button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: var(--main-orange);
+    border: 1px;
+    border-color: var(--main-orange);
+    padding: 8px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    /* Remove the default focus outline */
+}
+
+#about-head {
+    margin-bottom: 32px;
+    margin-top: 375px;
+}
+
+#about-des {
+    margin-bottom: 24px;
+}
+
+#more-products {
+    margin-top: 48px;
+    margin-bottom: 128px;
+}
+
+#see-more {
+    margin-top: 48px;
+    margin-bottom: 128px;
+}
+
+.video {
+    border-radius: 16px;
+}
+
+#video {
+    margin-top: 128px;
+}
+
+#video-head {
+    margin-top: 24px;
+}
+
+#video-des {
+    margin-top: 24px;
+}
+
+#blog-head {
+    margin-bottom: 32px;
+    margin-top: 128px;
+}
+
+.blogs-card {
+    height: 350px;
+    background-image: url(/img/blog-cover.png);
+    border-radius: 16px;
+}
+
+.blog-name {
+    color: #ffffff;
+    text-align: right;
+    margin-top: 284px;
+    margin-right: 24px;
+}
+
+#cta-card {
+    padding: 32px 48px;
+    background-color: var(--light-blue);
+    border-radius: 16px;
+}
+
+#cta-head {
+    margin-bottom: 16px;
+}
+
+#cta-des {
+    color: var(--bg-black);
+    margin-bottom: 24px;
+}
