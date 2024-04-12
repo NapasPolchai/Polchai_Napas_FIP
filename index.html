@@ -20,41 +20,39 @@
 </head>
 
 <body>
-    <div>
-        <header id="main-header">
-            <div class="grid-con">
-                <div id="logo" class="l-col-span-full l-col-start-1 l-col-end-4">
-                    <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+    <header id="main-header">
+        <div class="grid-con">
+            <div id="logo" class="l-col-span-full l-col-start-1 l-col-end-4">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+
+            <nav id="main-nav" class="l-col-span-full l-col-start-10 l-col-end-13">
+                <div id="burger-con">
+                    <ul>
+                        <li>
+                            <a href="product.html" class="menu">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="menu">Contact</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
+        </div>
+    </header>
 
-                <nav id="main-nav" class="l-col-span-full l-col-start-10 l-col-end-13">
-                    <div id="burger-con">
-                        <ul>
-                            <li>
-                                <a href="product.html" class="menu">Products</a>
-                            </li>
+    <section>
+        <div id="hero">
+            <h1 id="hero-text">
+                Unleash<br>
+                the<span class="italic-bold">Flavor</span><br>
+                Cosmos!
+            </h1>
 
-                            <li>
-                                <a href="contact.html" class="menu">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <section>
-            <div id="hero">
-                <h1 id="hero-text">
-                    Unleash<br>
-                    theFlavor<br>
-                    Cosmos!
-                </h1>
-
-                <img src="img/hero-img.png" alt="hero-img" id="hero-img">
-            </div>
-        </section>
-    </div>
+            <img src="img/hero-img.png" alt="hero-img" id="hero-img">
+        </div>
+    </section>
 
     <section id="about">
         <div class="grid-con">
@@ -74,22 +72,23 @@
         </div>
 
         <div class="grid-con" id="products">
-            <div id="card-lemon" class="l-col-start-1 l-col-end-5">
+            <div id="card-lemon" class="l-col-start-1 l-col-end-5 m-col-start-1 m-col-end-5">
                 <img src="img/Front-Can-lemon.png" alt="lemon-can" class="card-img">
-                <h4 class="l-col-start-1 l-col-end-5"> Lemon Breeze</h4>
+                <h4 class="card-head">Lemon Breeze</h4>
             </div>
 
-            <div id="card-lemon" class="l-col-start-5 l-col-end-9">
-                <img src="img/Front-Can-strawberry.png" alt="strawberry-can">
-                <h4 class="l-col-start-1 l-col-end-5"> Lemon Breeze</h4>
+            <div id="card-lemon" class="l-col-start-5 l-col-end-9 m-col-start-5 m-col-end-9">
+                <img src="img/Front-Can-strawberry.png" alt="strawberry-can" class="card-img">
+                <h4 class="card-head">Strawberry Serenade</h4>
             </div>
 
-            <div id="card-lemon" class="l-col-start-9 l-col-end-13">
-                <img src="img/Front-Can-grape.png" alt="grape-can">
-                <h4 class="l-col-start-1 l-col-end-5"> Lemon Breeze</h4>
+            <div id="card-lemon" class="l-col-start-9 l-col-end-13 m-col-start-9 m-col-end-13">
+                <img src="img/Front-Can-grape.png" alt="grape-can" class="card-img">
+                <h4 class="card-head">Grape Bliss Burst</h4>
             </div>
 
-            <h5 class="l-col-start-5 l-col-end-9" id="more-products">Explore our Products ></h5>
+            <h5 class="l-col-start-5 l-col-end-9 m-col-start-1 m-col-end-13" id="more-products">Explore our Products >
+            </h5>
         </div>
     </section>
 
@@ -116,12 +115,16 @@
 
                     <div>
                         <label for="message">Message</label>
-                        <input type="message" id="message" name="message" required>
+                        <textarea type="message" id="message" name="message" required></textarea>
                     </div>
-                    <button type="submit">
-                        <h5>Send ></h5>
+                    <button type="submit" class="animate-button">
+                        Send >
                     </button>
                 </form>
+            </div>
+
+            <div class="l-col-start-7 l-col-end-13">
+                <img src="img/2-cans.png" alt="">
             </div>
         </div>
     </section>
@@ -173,12 +176,35 @@
                     Elevate your refreshment game and <br>indulge in a symphony of taste that defies expectations.
                 </p>
 
-                <button type="submit">
-                    <h5>Contact us</h5>
+                <button type="submit" class="animate-button">
+                    Contact us
                 </button>
             </div>
         </div>
     </section>
+
+    <footer>
+        <div id="footer" class="grid-con">
+            <div id="logo" class="l-col-span-full l-col-start-1 l-col-end-4">
+                <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            </div>
+
+            <nav id="main-nav" class="l-col-start-10 l-col-end-13">
+                <div id="burger-con">
+                    <ul>
+                        <li>
+                            <a href="product.html" class="menu">Products</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html" class="menu">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+
 </body>
 <script src="js/main.js"></script>
 
