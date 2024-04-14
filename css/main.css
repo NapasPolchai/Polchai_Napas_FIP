@@ -1,5 +1,3 @@
-
-
 :root {
     --main-orange: #F05D5E;
     --light-blue: #E7ECEF;
@@ -362,8 +360,82 @@ body {
     transition: .3s ease-in-out;
 }
 
+
+#card-strawberry {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: 0px 98px;
+    position: relative;
+    height: 286px;
+    margin-top: 72px;
+    transition: .3s ease-in-out;
+}
+
+#card-strawberry:hover img {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+#card-strawberry:hover h4 {
+    transform: translate3d(0, 10px, 0);
+    transition: .3s ease-in-out;
+}
+
+
+#card-grape {
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: 0px 98px;
+    position: relative;
+    height: 286px;
+    margin-top: 72px;
+    transition: .3s ease-in-out;
+}
+
+#card-grape:hover img {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+#card-grape:hover h4 {
+    transform: translate3d(0, 10px, 0);
+    transition: .3s ease-in-out;
+}
+
+
+
+#card-lemon2:hover img {
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
+
+#card-lemon2:hover h4 {
+    transform: translate3d(0, 16px, 0);
+    transition: .3s ease-in-out;
+}
+
+
+
 @media screen and (max-width: 1199px) {
     #card-lemon {
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-position: 0px 98px;
+        position: relative;
+        height: 208px;
+        margin-top: 72px;
+    }
+
+    #card-strawberry {
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-position: 0px 98px;
+        position: relative;
+        height: 208px;
+        margin-top: 72px;
+    }
+
+    #card-grape {
         border-radius: 16px;
         background-color: rgba(255, 255, 255, 0.5);
         background-position: 0px 98px;
@@ -375,6 +447,26 @@ body {
 
 @media screen and (max-width: 767px) {
     #card-lemon {
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-position: 0px 98px;
+        position: relative;
+        height: 279px;
+        margin-top: 72px;
+        margin-bottom: 48px;
+    }
+
+    #card-strawberry {
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-position: 0px 98px;
+        position: relative;
+        height: 279px;
+        margin-top: 72px;
+        margin-bottom: 48px;
+    }
+
+    #card-grape {
         border-radius: 16px;
         background-color: rgba(255, 255, 255, 0.5);
         background-position: 0px 98px;
@@ -451,20 +543,22 @@ body {
     z-index: 1;
 }
 
+#card-strawberry img {
+    position: absolute;
+    margin-top: -100px;
+    z-index: 1;
+}
+
+#card-grape img {
+    position: absolute;
+    margin-top: -100px;
+    z-index: 1;
+}
+
 #card-lemon2 img {
     position: absolute;
     margin-top: -128px;
     z-index: 1;
-}
-
-#card-strawberry {
-    border-radius: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-#card-grape {
-    border-radius: 16px;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .card-head {
@@ -897,14 +991,14 @@ label {
 }
 
 @media screen and (max-width: 1199px) {
-    #contact-button-cta{
+    #contact-button-cta {
         margin-left: 250px;
         margin-right: 250px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    #contact-button-cta{
+    #contact-button-cta {
         margin-left: 55px;
         margin-right: 55px;
     }
@@ -1071,22 +1165,25 @@ label {
 
 
 
-nav{
+nav {
     background-color: rgba(255, 255, 255, 0.001);
     backdrop-filter: blur(8px);
     margin-top: 48px;
-  }
-  nav ul{
+}
+
+nav ul {
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  }
-  nav li{
+}
+
+nav li {
     height: 50px;
-  }
-  nav a{
+}
+
+nav a {
     height: 100%;
     padding: 0 30px;
     font: normal normal 400 24px/32px IBM Plex Mono;
@@ -1094,14 +1191,15 @@ nav{
     display: flex;
     align-items: center;
     color: var(--white);
-  }
-  
-  nav li:first-child{
+}
+
+nav li:first-child {
     margin-right: auto;
-  }
-  .sidebar{
+}
+
+.sidebar {
     position: fixed;
-    top: 0; 
+    top: 0;
     right: 0;
     height: 100vh;
     width: 250px;
@@ -1113,61 +1211,164 @@ nav{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-  }
-  .sidebar li{
+}
+
+.sidebar li {
     width: 100%;
-  }
-  .sidebar a{
+}
+
+.sidebar a {
     width: 100%;
     font: normal normal 400 24px/32px IBM Plex Mono;
-  }
-  .menu-button{
+}
+
+.menu-button {
     display: none;
-  }
-  @media(max-width: 800px){
-    .hideOnMobile{
-      display: none;
+}
+
+@media(max-width: 800px) {
+    .hideOnMobile {
+        display: none;
     }
-    .menu-button{
-      display: block;
+
+    .menu-button {
+        display: block;
     }
-  
-    .sidebar{
-      position: fixed;
-      top: 0; 
-      right: 0;
-      height: 172px;
-      width: 250px;
-      background-color: rgba(255, 255, 255, 0.15);
-      background-position: -48px;
-      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-      list-style: none;
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      margin-top: 0px;
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 172px;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.15);
+        background-position: -48px;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 0px;
     }
-  }
-  @media(max-width: 400px){
-    .sidebar{
-      width: 100%;
+}
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 100%;
     }
-  
-    .sidebar{
-      position: fixed;
-      margin-top: 0px;
-      top: 0; 
-      right: 0;
-      height: 150px;
-      width: 250px;
-      background-color: rgba(255, 255, 255, 0.15);
-      background-position: -48px;
-      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-      list-style: none;
-      display: none;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
+
+    .sidebar {
+        position: fixed;
+        margin-top: 0px;
+        top: 0;
+        right: 0;
+        height: 150px;
+        width: 250px;
+        background-color: rgba(255, 255, 255, 0.15);
+        background-position: -48px;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
-  }
+}
+
+/* ============================================== */
+/* Lightbox */
+/* ============================================== */
+
+/* Styles for lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 32px 48px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.lightbox-content p {
+    color: var(--bg-black);
+}
+
+.lightbox-content h2 {
+    margin-bottom: 32px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--main-orange);
+}
+
+@media screen and (max-width: 767px) {
+    .lightbox-content {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 16px 32px;
+        border-radius: 16px;
+        text-align: center;
+        width: 90%;
+    }
+
+    .lightbox-content p {
+        color: var(--bg-black);
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .lightbox-content h2 {
+        margin-bottom: 24px;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .lightbox-content {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 24px 48px;
+        border-radius: 16px;
+        text-align: center;
+        width: 96%;
+    }
+
+    .lightbox-content p {
+        color: var(--bg-black);
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .lightbox-content h2 {
+        margin-bottom: 24px;
+        font-size: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+}
