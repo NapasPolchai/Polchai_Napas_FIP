@@ -21,8 +21,9 @@
 
 <body>
     <header id="main-header">
-        <div class="grid-con">
-            <div id="logo" class="l-col-span-full l-col-start-1 l-col-end-4 m-col-span-full m-col-start-1 m-col-end-4 col-span-full col-start-1 col-end-3">
+        <!-- <div class="grid-con">
+            <div id="logo"
+                class="l-col-span-full l-col-start-1 l-col-end-4 m-col-span-full m-col-start-1 m-col-end-4 col-span-full col-start-1 col-end-3">
                 <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
             </div>
 
@@ -39,7 +40,21 @@
                     </ul>
                 </div>
             </nav>
-        </div>
+        </div> -->
+
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><img src="img/close.svg" alt=""></svg></a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="index.html"><img src="img/logo.svg" alt="" id="logo"></a></li>
+                <li class="hideOnMobile"><a href="product.html">Products</a></li>
+                <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><img src="img/burger.svg" alt=""></a></li>
+            </ul>
+        </nav>
     </header>
 
     <section>
@@ -87,8 +102,12 @@
                 <h4 class="card-head">Grape Bliss Burst</h4>
             </div>
 
-            <h5 class="l-col-start-5 l-col-end-9 m-col-start-1 m-col-end-13 col-start-1 col-end-5" id="more-products">Explore our Products >
-            </h5>
+            <a href="product.html" class="l-col-start-5 l-col-end-9 m-col-start-1 m-col-end-13 col-start-1 col-end-5"
+                id="more-products">
+                <h5>
+                    Explore our Products >
+                </h5>
+            </a>
         </div>
     </section>
 
@@ -179,9 +198,11 @@
                     Elevate your refreshment game and <br>indulge in a symphony of taste that defies expectations.
                 </p>
 
-                <button type="submit" class="animate-button" id="contact-us-button">
-                    Contact us
-                </button>
+                <a href="contact.html" id="contact-button-cta">
+                    <button type="submit" class="animate-button" id="contact-us-button">
+                        Contact us
+                    </button>
+                </a>
             </div>
         </div>
     </section>
@@ -211,6 +232,6 @@
     </footer>
 
 </body>
-<script src="js/main.js"></script>
+<script src="js/script.js"></script>
 
 </html>

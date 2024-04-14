@@ -1,3 +1,5 @@
+
+
 :root {
     --main-orange: #F05D5E;
     --light-blue: #E7ECEF;
@@ -137,8 +139,28 @@ p {
 }
 
 #logo {
-    margin-top: 48px;
+    margin-top: 16px;
     margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1199px) {
+    #logo {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        margin-left: -48px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #logo {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        margin-left: -48px;
+    }
+}
+
+footer #logo {
+    margin: 72px auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -173,7 +195,6 @@ p {
 
 #main-header {
     background-color: rgba(255, 255, 255, 0.001);
-    /* background-color: rgba(240, 93, 94, 1); */
     margin-bottom: -128px;
     backdrop-filter: blur(8px);
     position: fixed;
@@ -188,7 +209,6 @@ footer {
 
 #footer {
     background-color: var(--main-orange);
-    /* background-color: rgba(240, 93, 94, 1); */
     margin-bottom: -128px;
     top: 0;
     z-index: 1000;
@@ -252,14 +272,13 @@ body {
 
 #hero {
     background-color: var(--main-orange);
-    height: 96vh;
+    height: 100vh;
     width: 100vw;
     padding-top: 160px;
 }
 
 #hero-text {
     position: relative;
-    /* margin-top: 128px; */
     justify-content: center;
     width: 100vw;
 }
@@ -267,7 +286,6 @@ body {
 @media screen and (max-width: 1199px) {
     #hero-text {
         position: relative;
-        /* margin-top: 128px; */
         justify-content: center;
         width: 100vw;
         font: normal var(--unnamed-font-weight-600) var(--unnamed-font-size-128)/128px var(--unnamed-font-family-poppins);
@@ -283,7 +301,6 @@ body {
 @media screen and (max-width: 767px) {
     #hero-text {
         position: relative;
-        /* margin-top: 128px; */
         justify-content: center;
         width: 100vw;
         font: normal var(--unnamed-font-weight-600) var(--unnamed-font-size-128)/128px var(--unnamed-font-family-poppins);
@@ -879,6 +896,20 @@ label {
     }
 }
 
+@media screen and (max-width: 1199px) {
+    #contact-button-cta{
+        margin-left: 250px;
+        margin-right: 250px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #contact-button-cta{
+        margin-left: 55px;
+        margin-right: 55px;
+    }
+}
+
 /* ============================================== */
 /* Products page */
 /* ============================================== */
@@ -1029,3 +1060,114 @@ label {
 #product-list {
     padding-top: 180px;
 }
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    background-color: rgba(255, 255, 255, 0.001);
+    backdrop-filter: blur(8px);
+    margin-top: 48px;
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    font: normal normal 400 24px/32px IBM Plex Mono;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+  }
+  
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+    font: normal normal 400 24px/32px IBM Plex Mono;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 800px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  
+    .sidebar{
+      position: fixed;
+      top: 0; 
+      right: 0;
+      height: 172px;
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.15);
+      background-position: -48px;
+      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin-top: 0px;
+    }
+  }
+  @media(max-width: 400px){
+    .sidebar{
+      width: 100%;
+    }
+  
+    .sidebar{
+      position: fixed;
+      margin-top: 0px;
+      top: 0; 
+      right: 0;
+      height: 150px;
+      width: 250px;
+      background-color: rgba(255, 255, 255, 0.15);
+      background-position: -48px;
+      box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+      list-style: none;
+      display: none;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
